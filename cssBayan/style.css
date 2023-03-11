@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    background-color:rgb(251, 248, 218);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.accordion:hover .button{
+    visibility: visible;
+}
+
+
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.mem input,
+.mem-img {
+    display: none;
+}
+
+
+.mem:checked {
+   color: aliceblue;
+}
+
+.mem :checked ~ .mem-title .mem-img {
+    display: block;
+}
+
+.mem :checked ~ .mem-title .button {
+ transform: rotate(45deg);
+}
+
+.mem-container {
+    width: 25%;
+    height: 50%;
+}
+
+.mem-title {
+    
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.button {
+    background-image: url(./img/plus.png);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    visibility: hidden;
+}
+
+.mem {
+    border-bottom: 0.12rem solid rgba(161, 149, 149, 0.9);
+}
+
+.mem:hover .mem-img{
+    display: block;
+}
+
+.mem-img:hover {
+    cursor: pointer;
+}
+
+.mem-title-items {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
