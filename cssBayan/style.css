@@ -29,20 +29,23 @@ h1 {
 
 .mem input,
 .mem-img {
-    display: none;
+    width: 0;
+    transition:  1s;
+    margin: 0 auto;
 }
 
 
-.mem:checked {
+/* .mem:checked {
    color: aliceblue;
-}
+} */
 
 .mem :checked ~ .mem-title .mem-img {
-    display: block;
+    width: 23rem;
 }
 
 .mem :checked ~ .mem-title .button {
  transform: rotate(45deg);
+ transition:  0.5s;
 }
 
 .mem-container {
@@ -69,8 +72,9 @@ h1 {
 }
 
 .mem:hover .mem-img{
-    display: block;
-}
+    width: 23rem;
+    transition:  1s;
+}    
 
 .mem-img:hover {
     cursor: pointer;
