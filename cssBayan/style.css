@@ -70,6 +70,20 @@ h1 {
     height: 50%;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .mem-container {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .mem-container {
+        width: 80%;
+        height: 100%;
+    }
+}
+
 .mem-title {    
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
