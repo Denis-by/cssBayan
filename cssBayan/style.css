@@ -25,6 +25,25 @@ h1 {
     font-weight: bold;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+}
+
+@media  (min-width: 768px) and (max-width: 1279px){
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media  (min-width: 1920px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 .mem input,
 .mem-img {
     width: 0;
@@ -38,7 +57,7 @@ h1 {
 } */
 
 .mem :checked ~ .mem-title .mem-img {
-    width: 23rem;
+    width: 60%;
 }
 
 .mem :checked ~ .mem-title .button {
@@ -47,12 +66,11 @@ h1 {
 }
 
 .mem-container {
-    width: 50%;
+    width: 40%;
     height: 50%;
 }
 
-.mem-title {
-    
+.mem-title {    
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
 }
@@ -65,17 +83,43 @@ h1 {
     visibility: hidden;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .button {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .button {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .button {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 .mem {
     border-bottom: 0.12rem solid rgba(161, 149, 149, 0.9);
 }
 
-.mem:hover .mem-img{
-    width: 23rem;
-    transition:  1s;
-}    
 
-.mem-img:hover {
-    cursor: pointer;
+@media (hover: hover) {
+    .mem:hover .mem-img{
+        width: 50%;
+        transition:  1s;
+    }
+}
+
+@media (hover: hover) {
+    .mem-img:hover {
+        cursor: pointer;
+    }
 }
 
 .mem-title-items {
@@ -84,4 +128,22 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .mem-title-items {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .mem-title-items {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1920px)  {
+    .mem-title-items {
+        font-size: 2rem;
+    }
 }
